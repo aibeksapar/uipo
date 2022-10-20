@@ -6,11 +6,15 @@
 	<meta name="format-detection" content="telephone=no">
 	<link rel="stylesheet" href="css/style.min.css">
 	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 	<body>
+		<div class="preloader">
+			<div class="loader"></div>
+		</div>
 		<div class="wrapper">
 			<header class="header">
 	<div class="header__wrapper">
@@ -50,8 +54,8 @@
 							</ul>
 						</menu>
 					</div>
-					<div class="header__order-btn btn-order">
-						<button class="btn-order__button" type="button">Заказать работу</button>
+					<div class="header__order-link link-order">
+						<a class="link-order__link _popup-link" href="#callback">Заказать работу</a>
 					</div>
 				</div>
 				<div class="header__submenu submenu-block">
@@ -59,19 +63,19 @@
 						<menu class="submenu-block__menu">
 							<ul class="submenu-block__list">
 								<li class="submenu-block__item">
-									<a class="submenu-block__link" href="">О нас</a>
+									<a class="submenu-block__link _goto-block" href="#page__benefits">О нас</a>
 								</li>
 								<li class="submenu-block__item">
-									<a class="submenu-block__link" href="">Тарифы</a>
+									<a class="submenu-block__link _goto-block" href="#page__why">Почему мы?</a>
 								</li>
 								<li class="submenu-block__item">
-									<a class="submenu-block__link" href="">Гарантия</a>
+									<a class="submenu-block__link _goto-block" href="#page__warranty">Гарантия</a>
 								</li>
 								<li class="submenu-block__item">
-									<a class="submenu-block__link" href="">Отзывы</a>
+									<a class="submenu-block__link _goto-block" href="#page__prices">Прайс</a>
 								</li>
 								<li class="submenu-block__item">
-									<a class="submenu-block__link" href="">FAQ</a>
+									<a class="submenu-block__link _goto-block" href="#page__faq">FAQ</a>
 								</li>
 							</ul>
 						</menu>
@@ -82,7 +86,7 @@
 	</div>
 </header>
 			<main class="page">
-				<section class="page__benefits benefits">
+				<section class="page__benefits benefits _scr-item"">
 					<div class="benefits__container _container">
 						<div class="benefits__body">
 							<div class="benefits__content">
@@ -129,7 +133,52 @@
 						</div>
 					</div>
 				</section>
-				<section class="page__prices prices">
+				<section class="page__why why _scr-item"">
+					<h2 class="why__title">Почему мы?</h2>
+					<div class="why__container _container">
+						<div class="why__body">
+							<ul class="why__cards cards-why">
+								<li class="cards-why__item why-card">
+									<div class="why-card__image">
+										<img src="img/whywe/1.jpg" alt="">
+									</div>
+									<div class="why-card__text">
+										<h3 class="why-card__title">Untapped Potential</h3>
+										<p class="why-card__paragraph">Arcu suspendisse sit amet, consectetur adipiscing elit. Tincidunt neque phasellus eu, ultricies eget est, ague.</p>
+									</div>
+								</li>
+								<li class="cards-why__item why-card">
+									<div class="why-card__image">
+										<img src="img/whywe/2.jpg" alt="">
+									</div>
+									<div class="why-card__text">
+										<h3 class="why-card__title">Untapped Potential</h3>
+										<p class="why-card__paragraph">Arcu suspendisse sit amet, consectetur adipiscing elit. Tincidunt neque phasellus eu, ultricies eget est, ague.</p>
+									</div>
+								</li>
+								<li class="cards-why__item why-card">
+									<div class="why-card__image">
+										<img src="img/whywe/3.jpg" alt="">
+									</div>
+									<div class="why-card__text">
+										<h3 class="why-card__title">Untapped Potential</h3>
+										<p class="why-card__paragraph">Arcu suspendisse sit amet, consectetur adipiscing elit. Tincidunt neque phasellus eu, ultricies eget est, ague.</p>
+									</div>
+								</li>
+								<li class="cards-why__item why-card">
+									<div class="why-card__image">
+										<img src="img/whywe/4.jpg" alt="">
+									</div>
+									<div class="why-card__text">
+										<h3 class="why-card__title">Untapped Potential</h3>
+										<p class="why-card__paragraph">Arcu suspendisse sit amet, consectetur adipiscing elit. Tincidunt neque phasellus eu, ultricies eget est, ague.</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				<section class="page__prices prices _scr-item"">
 					<div class="prices__container _container">
 						<div class="prices__body">
 							<div class="prices__info info-price">
@@ -329,6 +378,116 @@
 						</div>
 					</div>
 				</section>
+				<section class="page__faq faq _scr-item">
+					<div class="faq__container _container">
+						<div class="faq__body">
+							<div class="faq__content">
+								<h2 class="faq__title">FAQ</h2>
+								<div class="faq__spollers spollers-block" data-spollers data-one-spoller>
+									<div class="spoller-block__item">
+										<div class="spollers-block__title _active" data-spoller>
+											<div class="spollers-block__title-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry</div>
+											<div class="spollers-block__title-arrow"></div>
+										</div>
+										<div class="spollers-block__body">
+											<div class="spollers-block__text">
+												Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions.
+											</div>
+										</div>
+									</div>
+									<div class="spoller-block__item">
+										<div class="spollers-block__title" data-spoller>
+											<div class="spollers-block__title-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry</div>
+											<div class="spollers-block__title-arrow"></div>
+										</div>
+										<div class="spollers-block__body">
+											<div class="spollers-block__text">
+												Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions.
+											</div>
+										</div>
+									</div>
+									<div class="spoller-block__item">
+										<div class="spollers-block__title" data-spoller>
+											<div class="spollers-block__title-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</div>
+											<div class="spollers-block__title-arrow"></div>
+										</div>
+										<div class="spollers-block__body">
+											<div class="spollers-block__text">
+												Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions.
+											</div>
+										</div>
+									</div>
+									<div class="spoller-block__item">
+										<div class="spollers-block__title" data-spoller>
+											<div class="spollers-block__title-text">Lorem Ipsum is simply</div>
+											<div class="spollers-block__title-arrow"></div>
+										</div>
+										<div class="spollers-block__body">
+											<div class="spollers-block__text">
+												Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+											</div>
+										</div>
+									</div>
+									<div class="spoller-block__item">
+										<div class="spollers-block__title" data-spoller>
+											<div class="spollers-block__title-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry</div>
+											<div class="spollers-block__title-arrow"></div>
+										</div>
+										<div class="spollers-block__body">
+											<div class="spollers-block__text">
+												Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions.
+											</div>
+										</div>
+									</div>
+									<div class="spoller-block__item">
+										<div class="spollers-block__title" data-spoller>
+											<div class="spollers-block__title-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry</div>
+											<div class="spollers-block__title-arrow"></div>
+										</div>
+										<div class="spollers-block__body">
+											<div class="spollers-block__text">
+												Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions.
+											</div>
+										</div>
+									</div>
+									<div class="spoller-block__item">
+										<div class="spollers-block__title" data-spoller>
+											<div class="spollers-block__title-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry</div>
+											<div class="spollers-block__title-arrow"></div>
+										</div>
+										<div class="spollers-block__body">
+											<div class="spollers-block__text">
+												Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions.
+											</div>
+										</div>
+									</div>
+									<div class="spoller-block__item">
+										<div class="spollers-block__title" data-spoller>
+											<div class="spollers-block__title-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry</div>
+											<div class="spollers-block__title-arrow"></div>
+										</div>
+										<div class="spollers-block__body">
+											<div class="spollers-block__text">
+												Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions.
+											</div>
+										</div>
+									</div>
+									<div class="spoller-block__item">
+										<div class="spollers-block__title" data-spoller>
+											<div class="spollers-block__title-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry</div>
+											<div class="spollers-block__title-arrow"></div>
+										</div>
+										<div class="spollers-block__body">
+											<div class="spollers-block__text">
+												Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions.
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
 			</main>
 			<footer class="footer">
 	<div class="footer__container _container">
@@ -336,14 +495,97 @@
 	</div>
 </footer>
 		</div>
-		<div class="popup popup_popup">
+		<div class="popup popup_callback">
 	<div class="popup__content">
 		<div class="popup__body">
 			<div class="popup__close"></div>
+			<section class="page__form form">
+				<div class="form__container _container">
+					<form class="form__body" action="send.php" method="POST">
+						<div class="form__content">
+							<h2 class="form__title">Анкета</h2>
+							<ul class="form__fields fields-form">
+								<li class="fields-form__field">
+									<div class="fields-form__image">
+										<img src="img/form/name.png" alt="">
+									</div>
+									<div class="fields-form__input-wrapper">
+										<input class="fields-form__input" name="input-name" type="text" placeholder="Имя">
+									</div>
+								</li>
+								<li class="fields-form__field">
+									<div class="fields-form__image">
+										<img src="img/form/email.png" alt="">
+									</div>
+									<div class="fields-form__input-wrapper">
+										<input class="fields-form__input" name="input-email" type="email" placeholder="Почта">
+									</div>
+								</li>
+								<li class="fields-form__field">
+									<div class="fields-form__image">
+										<img src="img/form/tarrif.png" alt="">
+									</div>
+									<div class="fields-form__input-wrapper">
+										<div class="select-container">
+											<div class="select-btn">
+												<span class="btn-text">Выберите услугу</span>
+												<span class="arrow-dwn">
+													<i class="fa-solid fa-chevron-down"></i>
+												</span>
+											</div>
+
+											<ul class="list-items">
+												<li class="item">
+													<span class="checkbox">
+															<i class="fa-solid fa-check check-icon"></i>
+													</span>
+													<span class="item-text">Эссе</span>
+												</li>
+												<li class="item">
+													<span class="checkbox">
+															<i class="fa-solid fa-check check-icon"></i>
+													</span>
+													<span class="item-text">Реферат</span>
+												</li>
+												<li class="item">
+													<span class="checkbox">
+															<i class="fa-solid fa-check check-icon"></i>
+													</span>
+													<span class="item-text">Презентация</span>
+												</li>
+												<li class="item">
+													<span class="checkbox">
+															<i class="fa-solid fa-check check-icon"></i>
+													</span>
+													<span class="item-text">Проектная работа</span>
+												</li>
+												<li class="item">
+													<span class="checkbox">
+															<i class="fa-solid fa-check check-icon"></i>
+													</span>
+													<span class="item-text">Научная работа</span>
+												</li>
+												<li class="item">
+													<span class="checkbox">
+															<i class="fa-solid fa-check check-icon"></i>
+													</span>
+													<span class="item-text">Дипломная работа</span>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<button class="form__button" type="submit">Отправить</button>
+						</div>
+					</form>
+				</div>
+			</section>
 		</div>
 	</div>
 </div>
-<div class="popup popup_massagename-message">
+
+<!-- <div class="popup popup_massagename-message">
 	<div class="popup__content">
 		<div class="popup__body">
 			<div class="popup__close"></div>
@@ -357,11 +599,12 @@
 			<div class="popup__video _video"></div>
 		</div>
 	</div>
-</div>
+</div> -->
 
 		<!-- Swiper -->
 <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
 <script src="js/vendors.min.js"></script>
 <script src="js/app.min.js"></script>
+
 	</body>
 </html>
